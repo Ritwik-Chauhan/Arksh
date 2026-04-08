@@ -1,0 +1,181 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  background: #96b4f0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111827;
+  font-size: 18px;
+}
+
+/* ===== CONTAINER ===== */
+.app-container {
+  max-width: 950px;
+  margin: auto;
+  padding: 2.5rem;
+}
+
+/* ===== HEADER ===== */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #1e293b;
+}
+
+.header p {
+  color: #374151;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.8rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== TITLES ===== */
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+/* ===== SERVICE BUTTONS ===== */
+.service-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.service-button {
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.service-button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* ===== INPUTS ===== */
+.input-group {
+  margin-bottom: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ===== GRID ===== */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===== BUTTONS ===== */
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+/* 🔥 YOUR SUBMIT BUTTON */
+.secondary-btn {
+  background: #0ea5e9;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: #0284c7;
+}
+
+/* ===== PROOF LIST ===== */
+.proof-list {
+  list-style: none;
+  padding: 0;
+}
+
+.proof-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f5f9;
+  padding: 0.7rem;
+  border-radius: 8px;
+  margin-bottom: 0.4rem;
+}
+
+/* ===== LANDING PAGE ===== */
+.landing-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 20, 40, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.landing-box {
+  background: #7c9dea;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.enter-btn-landing {
+  margin-top: 1rem;
+  background: #2563eb;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.secondary-btn {
+  background: #0ea5e9;   /* clean blue */
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.05rem;
+  transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background: #0284c7;   /* darker blue on hover */
+}
