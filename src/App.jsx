@@ -26,7 +26,7 @@ function App() {
       const field = PROOF_TO_RAW_FIELD[proof];
       if (field) fields.add(field);
     });
-
+{POLICIES[selectedService]?.name}
     return Array.from(fields);
   }
 
@@ -199,7 +199,10 @@ function App() {
 
             {submittedRawData && (
               <>
-                <p><strong>Service:</strong> {submittedRawData.service}</p>
+                <p>
+  <strong>Service:</strong>{" "}
+  {POLICIES[submittedRawData.service]?.name}
+</p>
                 <p><strong>Time:</strong> {submittedRawData.time}</p>
 
                 <h4>Raw Data Received</h4>
