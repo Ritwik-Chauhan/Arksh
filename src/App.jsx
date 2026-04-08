@@ -26,7 +26,7 @@ function App() {
       const field = PROOF_TO_RAW_FIELD[proof];
       if (field) fields.add(field);
     });
-{POLICIES[selectedService]?.name}
+ fields.add("name");
     return Array.from(fields);
   }
 

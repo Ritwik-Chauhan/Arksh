@@ -1,4 +1,5 @@
 export const PROOF_TO_RAW_FIELD = {
+  name: "name",
   age_over_18: "dob",
   age_over_21: "dob",
   citizenship_india: "citizenship",
