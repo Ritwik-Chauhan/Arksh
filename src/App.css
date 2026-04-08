@@ -179,3 +179,18 @@ body {
 .secondary-btn:hover {
   background: #0284c7;   /* darker blue on hover */
 }
+/* ===== MOBILE FIX (ONLY ADD THIS) ===== */
+@media (max-width: 600px) {
+  .landing-box {
+    width: 90%;
+    padding: 1.2rem;
+  }
+
+  .enter-btn-landing {
+    width: 100%;
+    max-width: 280px;
+    display: block;
+    margin: 1rem auto 0;
+    font-size: 1rem;
+  }
+}
